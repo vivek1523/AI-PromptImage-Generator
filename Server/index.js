@@ -13,7 +13,7 @@ const port = process.env.PORT || 4000;
 
 
 const corsOrigin = {
-    origin: ["http://localhost:5173"],
+    origin: ["https://ai-promptimage-generator-client.onrender.com/"],
 }
 
 app.use(express.json());
