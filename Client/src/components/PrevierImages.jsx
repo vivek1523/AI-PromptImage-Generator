@@ -4,7 +4,7 @@ import axios from "axios";
 import "./PreviewImage.css";
 
 const fetchImageAPI = async () =>{
-  const response = await axios.get('https://ai-promptimage-generator-server.onrender.com/stored-images');
+  const response = await axios.get('https://ai-promptimage-generator-server.onrender.com');
 
   return response.data
 }
