@@ -4,7 +4,7 @@ import axios from "axios";
 import "./AI-Generator.css"; 
  
 const generateImageAPI = async (prompt) =>{
-  const response = await axios.post('https://ai-promptimage-generator-server.onrender.com', { prompt });
+  const response = await axios.post('https://ai-promptimage-generator-server.onrender.com/generate-image', { prompt });
 
   return response.data.imageMongoDB.url
 }
